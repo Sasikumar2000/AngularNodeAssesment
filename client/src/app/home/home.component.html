@@ -1,0 +1,45 @@
+
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-dark bg-success">
+  <div class="container">
+    <h4 class="navbar-brand" >Admin</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/productentry" routerLinkActive="active">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/categoryentry" routerLinkActive="active" >Category</a>
+        </li>
+       
+      </ul>
+    </div>  
+  </div>
+</nav>
+
+<br><br><br><br>
+
+<div class="cointainer">
+  <div style="margin: auto;">
+       <h1 style="padding-left: 40%;">E-Commerce</h1>
+       <p style="padding-left: 10%;padding-right: 10%;">
+                E-commerce (electronic commerce) is the activity of 
+        electronically buying or selling of products on online
+         services or over the Internet.
+         E-commerce draws on technologies such as mobile commerce,
+          electronic funds transfer, supply chain management, Internet 
+          marketing, online transaction processing, electronic data 
+          interchange (EDI), inventory management systems, and automated 
+          data collection systems. E-commerce is in turn driven by the technological
+           advances of the semiconductor industry, and is the largest sector of the 
+           electronics industry.
+       </p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,69 @@
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand" href="#">Product Entry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productentry" routerLinkActive="active">Entry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productlist" routerLinkActive="active">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productdetail" routerLinkActive="active">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productdelete" routerLinkActive="active">Delete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productupdate" routerLinkActive="active">Update</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </nav>
+<br>
+<br>
+
+<p>List Page</p>
+<div>
+    <table>
+        <tr>
+            <td><label>Product ID</label></td>
+            <td>:</td>
+            <td><input type="number" id="txtPid" [(ngModel)]="txtPid" /></td>
+        </tr>
+        <tr>
+            <td><label>Product Name</label></td>
+            <td>:</td>
+            <td><input type="text" id="txtPname" [(ngModel)]="txtPname"/></td>
+        </tr>
+        <tr>
+            <td><label>Processor</label></td>
+            <td>:</td>
+            <td><input type="text" id="txtProcessor" [(ngModel)]="txtProcessor"/></td>
+        </tr>
+        <tr>
+            <td><label>Country Of Orgin</label></td>
+            <td>:</td>
+            <td><input type="text" id="txtOrgin" [(ngModel)]="txtOrgin"/></td>
+        </tr>
+        <tr>
+            <td><label>Price</label></td>
+            <td>:</td>
+            <td><input type="number" id="txtPrice" [(ngModel)]="txtPrice"/></td>
+        </tr>
+       <tr></tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><button (click) = "SaveProduct1()">Save</button></td>
+        </tr>
+    </table>
+</div>

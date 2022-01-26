@@ -1,0 +1,107 @@
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-dark bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Category Update</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/categoryentry" routerLinkActive="active">Entry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/categorylist" routerLinkActive="active">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/categorydetail" routerLinkActive="active">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/categorydelete" routerLinkActive="active">Delete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/categoryupdate" routerLinkActive="active">Update</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="cointainer">
+  <table class="table">
+    <thead>
+        <tr>
+          <td>
+           Id 
+          </td>
+            <td>
+                Category_Id 
+            </td>
+            <td>
+                Category_Name 
+            </td>
+            <td>
+              Range
+            </td>
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categorys">
+          <td>
+            {{category.id}}
+        </td>
+            <td>
+                {{category.Category_Id}}
+            </td>
+            <td>
+              {{category.Category_Name}}
+          </td>
+          <td>
+            {{category.Range}}
+        </td>
+        
+   
+        </tr> 
+    </tbody>
+  </table>
+  </div>
+  
+  <div class="cointainer">
+    <table>
+      <tr>
+        <td><label>ID</label></td>
+        <td>:</td>
+        <td><input type="number" id="txtid" [(ngModel)]="txtid" /></td>
+    </tr>
+      <tr>
+          <td><label>Category ID</label></td>
+          <td>:</td>
+          <td><input type="number" id="txtCid" [(ngModel)]="txtCid" /></td>
+      </tr>
+      <tr>
+          <td><label>Category Name</label></td>
+          <td>:</td>
+          <td><input type="text" id="txtCname" [(ngModel)]="txtCname"/></td>
+      </tr>
+      <tr>
+          <td><label>Range</label></td>
+          <td>:</td>
+          <td><input type="text" id="txtRange" [(ngModel)]="txtRange"/></td>
+      </tr>
+      
+     <tr></tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td><button (click) = "UpdateCategory()">Save</button></td>
+      </tr>
+  </table>
+  </div>
