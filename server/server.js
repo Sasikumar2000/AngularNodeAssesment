@@ -17,7 +17,8 @@ const db = require("./app/models")
 db.sequelize.sync();
 
 app.get("/",(req,res) => {
-    res.json({ message : "welcome Sasikumar"});
+ 
+   res.send("<script>alert('connection succesfull')</script>");
 
 });
 

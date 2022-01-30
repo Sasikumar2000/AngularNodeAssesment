@@ -33,11 +33,11 @@
 <br>
 <br>
 <br>
-<div class="cointainer">
-<table class="table">
+<div style="width: 35%;float: left;margin-top: 50px; padding: 2px;margin-right: 2px;">
+<table class="table table-light table-bordered table-update">
   <thead>
       <tr>
-        <td>
+        <td> 
          Id 
         </td>
           <td>
@@ -84,8 +84,8 @@
 </table>
 </div>
 
-<div class="cointainer">
-  <table>
+<div class="genes" style="width: 35%;float: right;padding: 12px;margin-left: 12px;">
+  <table class="table-space" >
     <tr>
       <td><label>ID</label></td>
       <td>:</td>
@@ -116,11 +116,11 @@
         <td>:</td>
         <td><input type="number" id="txtPrice" [(ngModel)]="txtPrice"/></td>
     </tr>
-   <tr></tr>
+ 
     <tr>
       <td></td>
       <td></td>
-      <td><button (click) = "UpdateProduct()">Save</button></td>
+      <td><button (click) = "UpdateProduct()" class="btn btn-primary" style="margin-top: 10px; width: 100px;" >Save</button></td>
     </tr>
 </table>
 </div>

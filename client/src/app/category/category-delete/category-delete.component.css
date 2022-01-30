@@ -1,0 +1,51 @@
+.table-del {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    
+   
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+thead {
+    background-color: aquamarine;
+    font: 1em sans-serif;
+    border-collapse: collapse;
+}
+.formdiv{
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    
+}
+
+.table-form{
+    background-color: #fff;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.btn-hight{
+
+height: 30px;
+padding: 0px;
+width: 80px;
+}

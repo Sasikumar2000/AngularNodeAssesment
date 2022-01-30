@@ -77,8 +77,9 @@ exports.update = (req, res) => {
       .then(num => {
         if (num == 1) {
           res.send({
-            message: "skProduct was updated successfully."
+            message: `Product Updated Succesfully`
           });
+         
         } else {
           res.send({
             message: `Cannot update Tutorial with id=${id}. Maybe Tutorial was not found or req.body is empty!`
@@ -101,7 +102,9 @@ exports.delete = (req, res) => {
     })
       .then(num => {
         if (num == 1) {
-          res.json("alert('your alert message');");
+          res.send({
+            message: `Deleted Sucessfully`
+          });
         } else {
           res.send({
             message: `Cannot delete skProduct with id=${id}. Maybe Tutorial was not found!`
@@ -122,7 +125,7 @@ exports.deleteAll = (req, res) => {
         truncate: false
       })
         .then(nums => {
-          res.send({ message: `${nums} skProduct were deleted successfully!` });
+          res.send({ message: `${nums} Product were deleted successfully!` });
         })
         .catch(err => {
           res.status(500).send({

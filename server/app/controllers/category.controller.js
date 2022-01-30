@@ -78,7 +78,7 @@ exports.update = (req, res) => {
         .then(num => {
           if (num == 1) {
             res.send({
-              message: "Product was updated successfully."
+              message: `Product updated sucessfully`
             });
           } else {
             res.send({
@@ -103,7 +103,7 @@ exports.delete = (req, res) => {
         .then(num => {
           if (num == 1) {
             res.send({
-              message: "Product was deleted successfully!"
+              message: `Category Deleted Sucessfully`
             });
           } else {
             res.send({

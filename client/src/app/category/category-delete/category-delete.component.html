@@ -33,9 +33,21 @@
  <br>
  <br>
  <br>
+ <div class="formdiv">
+  <table class="table-form">
+    <tr>
+      <td><label>ID</label></td>
+      <td>:</td>
+      <td><input type="number" id="txtid" [(ngModel)] = "txtid" /></td>
+    
+      <td></td>
+      <td><button (click)="DeleteCategory()" class="btn-danger btn-hight">Delete</button></td>
+    </tr>
+  </table>
+</div>
 
  <div class="cointainer">
-  <table class="table">
+  <table class="table table-del ">
     <thead>
         <tr>
           <td>
@@ -74,17 +86,4 @@
   </table>
   </div>
 
-  <div>
-    <table>
-      <tr>
-        <td><label>ID</label></td>
-        <td>:</td>
-        <td><input type="number" id="txtid" [(ngModel)] = "txtid" /></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td><button (click)="DeleteCategory()" >Delete</button></td>
-      </tr>
-    </table>
-  </div>
+  

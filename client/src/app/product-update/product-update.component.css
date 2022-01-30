@@ -1,0 +1,55 @@
+.genes {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    max-height: 400px;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+   margin-right: 20px;
+}
+
+.table-space {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+input[type=text],input[type=number], select{
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    max-height: fit-content;
+  }
+
+  .table-update {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    max-height: 400px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: 50px;
+    border-collapse: separate;
+    padding-right: 20px;
+  
+}
+
+thead td{
+    background-color: aquamarine;
+    font: 1em sans-serif;
+  
+    border-collapse: collapse;
+}

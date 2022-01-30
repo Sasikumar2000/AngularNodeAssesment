@@ -32,38 +32,38 @@
 <br>
 
 <p>List Page</p>
-<div>
-    <table>
+<div class="genes">
+  <table style="margin: left 20px;padding-left: 40px;margin-right:auto;margin-top: auto;margin-bottom: auto;">
         <tr>
             <td><label>Product ID</label></td>
             <td>:</td>
-            <td><input type="number" id="txtPid" [(ngModel)]="txtPid" /></td>
+            <td><input class="form-control" type="number" id="txtPid" [(ngModel)]="txtPid" /></td>
         </tr>
         <tr>
             <td><label>Product Name</label></td>
             <td>:</td>
-            <td><input type="text" id="txtPname" [(ngModel)]="txtPname"/></td>
+            <td><input class="form-control" type="text" id="txtPname" [(ngModel)]="txtPname"/></td>
         </tr>
         <tr>
             <td><label>Processor</label></td>
             <td>:</td>
-            <td><input type="text" id="txtProcessor" [(ngModel)]="txtProcessor"/></td>
+            <td><input class="form-control" type="text" id="txtProcessor" [(ngModel)]="txtProcessor"/></td>
         </tr>
         <tr>
             <td><label>Country Of Orgin</label></td>
             <td>:</td>
-            <td><input type="text" id="txtOrgin" [(ngModel)]="txtOrgin"/></td>
+            <td><input class="form-control" type="text" id="txtOrgin" [(ngModel)]="txtOrgin"/></td>
         </tr>
         <tr>
             <td><label>Price</label></td>
             <td>:</td>
-            <td><input type="number" id="txtPrice" [(ngModel)]="txtPrice"/></td>
+            <td><input class="form-control" type="number" id="txtPrice" [(ngModel)]="txtPrice"/></td>
         </tr>
        <tr></tr>
         <tr>
           <td></td>
           <td></td>
-          <td><button (click) = "SaveProduct1()">Save</button></td>
+          <td><button (click) = "SaveProduct1()" class="btn btn-primary">Save</button></td>
         </tr>
     </table>
 </div>
